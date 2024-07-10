@@ -1,0 +1,22 @@
+$main-police: 'Montserrat, sans-serif';
+
+.navigation {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+
+        .links {
+            font-family: $main-police;
+            font-size: 20px;
+            display: flex;
+            gap: 25px;
+            a {
+                text-decoration: none;
+                color: black;
+            }
+            a.active {
+                text-decoration: underline;
+            }
+        }
+}
