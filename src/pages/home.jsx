@@ -1,9 +1,9 @@
 import { Link } from "react-router-dom";
-// import Card from "../components/card";
+import Cards from "../components/card";
 
 function Home() {
   return <>
-  {/* <Card /> */}
+  <Cards />
     <Link to="/location/3">mon logement</Link>
   </>
 }
