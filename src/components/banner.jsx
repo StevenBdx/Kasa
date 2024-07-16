@@ -1,10 +1,11 @@
 import React from 'react'
+import '../assets/style/banner.scss'
 
 export default function Banner({img, titre}) {
   return (
-    <div>
-      {titre && <h1>{titre}</h1>}
-      <img src={img} alt="" />
+    <div className='banner-container'>
+      {titre && <div className='title-banner'>{titre}</div>}
+      <img src={img} className='cover-banner' alt="Bannière représentant un paysage" />
     </div> 
   )
 }
