@@ -2,7 +2,7 @@ import { Link } from "react-router-dom";
 import Cards from "../components/card";
 import Banner from "../components/banner";
 import BannerOne from '../assets/images/banner-1.jpg'
-import Collapse from "../components/collapse";
+
 
 function Home() {
   return <>

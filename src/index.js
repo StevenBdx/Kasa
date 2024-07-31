@@ -8,7 +8,7 @@ import Home from './pages/home'
 import About from "./pages/about";
 import Layout from "./components/layout";
 import Location from "./pages/location";
- 
+import ErrorUrl from "./components/error";
 
 const router = createBrowserRouter([
   {
@@ -16,7 +16,6 @@ const router = createBrowserRouter([
     element: <Layout />,
     children: [
       {
-        
         element: <Home />,
         index: true
       },
@@ -28,6 +27,10 @@ const router = createBrowserRouter([
         path: "/location/:locationId",
         element: <Location />,
       },
+      {
+        path:"/*",
+        element: <ErrorUrl />,
+      }
     ]
   },
  
