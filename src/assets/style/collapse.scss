@@ -1,7 +1,8 @@
 
 
 .collapse-container {
-    
+    position: relative;
+    left: 11%;
     
     
     .button-collapse {
@@ -12,7 +13,7 @@
         background-color: rgba(255, 96, 96, 1);
         border-radius: 10px;
         margin-bottom: 15px;
-        
+        border: 0px;
     }
     .arrow {
         margin-left: auto;
@@ -22,5 +23,10 @@
         font-family: Montserrat, sans-serif;
         font-size: 18px;
         font-weight: 700;
+    }
+    .content-collapse {
+        overflow: hidden;
+        
+        transition: 1.3s ease-out;
     }
 }

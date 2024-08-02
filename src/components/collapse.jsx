@@ -16,7 +16,7 @@ export default function Collapse({children, title}) {
         {title && <div className='title-collapse'>{title}</div>}
             <img src={chooseArrow} className='arrow' alt="Arrow" />
         </button>
-        {isVisible && <div>{children}</div>}
+        {isVisible && <div className='content-collapse'>{children}</div>}
     </div>
   )
 }

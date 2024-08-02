@@ -1,10 +1,8 @@
 .banner-container {
     position: relative;
-    width: 1240px;
+    width: 80%;
     height: 223px;
     padding: 25px 40px;
-    display: flex;
-    align-items: center;
 
     .cover-banner {
         width: 100%;
@@ -16,7 +14,7 @@
     .title-banner {
         position: absolute;
         top: 50%;
-        left: 50%;
+        left: 40%;
         color: white;
         font-family: Montserrat, sans-serif;
         font-size: 24px;
