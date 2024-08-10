@@ -1,12 +1,11 @@
 import React from 'react'
-import { useParams } from 'react-router-dom';
+import Slidershow from '../components/slidershow'
 
 
 export default function Location() {
-    let { locationId } = useParams();
-    
     return (
-    
-    <div>{locationId}</div>
+      <>
+    <Slidershow />
+    </>
   )
 }

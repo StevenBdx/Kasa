@@ -24,7 +24,7 @@ const router = createBrowserRouter([
         element: <About />,
       },
       {
-        path: "/location/:locationId",
+        path: "/location",
         element: <Location />,
       },
       {

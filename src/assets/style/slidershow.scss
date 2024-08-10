@@ -1,0 +1,37 @@
+.carousel {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+
+    .image-carousel {
+        display: block;
+        width: 100%;
+        height: 400px;
+    }
+
+    .button-arrow {
+        position: absolute;
+        padding: 0;
+        border: none;
+        width: 60px;
+        height: 80px;
+        background: none;
+
+        &.next {
+            right: 0;
+        }
+
+        &.prev {
+            left: 0;
+        }
+
+        .image-arrow {
+            width: 100%;
+            height: 100%;
+
+        }
+
+    }
+
+}
