@@ -1,0 +1,26 @@
+.body-error {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    .error {
+        color: rgba(255, 96, 96, 1);
+        font-family: Montserrat, sans-serif;
+        font-weight: 700;
+        font-size: 288px;
+        padding-bottom: 50px;
+    }
+    .message {
+        color: rgba(255, 96, 96, 1);
+        font-family: Montserrat, sans-serif;
+        font-weight: 500;
+        font-size: 36px;
+        padding-bottom: 150px;
+    }
+    .message-return {
+        font-family: Montserrat, sans-serif;
+        font-size: 18px;
+        font-weight: 500;
+    }
+}
