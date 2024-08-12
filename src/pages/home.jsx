@@ -8,7 +8,7 @@ function Home() {
   return <>
   <Banner img={BannerOne} titre='Chez vous, partout et ailleurs'/>
   <Cards />
-    <Link to="/location/3">mon logement</Link>
+    <Link to="/location">mon logement</Link>
   </>
 }
 
