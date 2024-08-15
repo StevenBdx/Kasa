@@ -6,27 +6,22 @@ import '../assets/style/slidershow.scss'
 
 export default function Slidershow() {
   const [currentIndex, setCurrentIndex] = useState(0)
+  const totalSlides = listlogements[0].pictures.length
 
+      const nextSlide = () => {
+        return setCurrentIndex(currentIndex === totalSlides - 1 ? 0 : currentIndex + 1)
+      }
 
-
-  const nextSlide = () => {
-    setCurrentIndex((prevIndex) => {
-        console.log(prevIndex) // Log de la valeur de prevIndex avant l'incrémentation
-        return prevIndex + 1
-    })
-}
-
-      
+      const prevSlide = () => {
+        return setCurrentIndex(currentIndex === 0 ? totalSlides - 1 : currentIndex - 1)
+      }
     
-  
-
-
   return (
     <div className="carousel">
-      <button className='button-arrow prev'>
+      <button onClick={prevSlide} className='button-arrow prev'>
         <img className='image-arrow' src={ArrowPrev} alt="Arrow Previous" />
       </button>
-      <img className='image-carousel' src={listlogements[0].pictures[0]} alt="" />
+      <img key={listlogements.id} className='image-carousel' src={listlogements[0].pictures[currentIndex]} alt="" />
 
       <button onClick={nextSlide} className='button-arrow next'>
         <img className='image-arrow' src={ArrowNext} alt="Arrow Next" />
