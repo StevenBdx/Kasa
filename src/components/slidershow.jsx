@@ -22,7 +22,9 @@ export default function Slidershow({ listImage }) {
         <img className='image-arrow' src={ArrowPrev} alt="Arrow Previous" />
       </button>
       <img className='image-carousel' src={listImage[currentIndex]} alt="" />
-
+      <div className="carousel-counter">
+        {currentIndex + 1}/{totalSlides}
+      </div>
       <button onClick={nextSlide} className='button-arrow next'>
         <img className='image-arrow' src={ArrowNext} alt="Arrow Next" />
       </button>

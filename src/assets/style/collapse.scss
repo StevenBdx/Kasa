@@ -1,9 +1,9 @@
 
-
+//css for collapse on page about//
 .collapse-container {
     position: relative;
     left: 11%;
-    
+    margin-bottom: 25px;
     
     .button-collapse {
         display: flex;
@@ -12,7 +12,7 @@
         height: 52px;
         background-color: rgba(255, 96, 96, 1);
         border-radius: 10px;
-        margin-bottom: 15px;
+        
         border: 0px;
     }
     .arrow {
@@ -28,8 +28,12 @@
         font-family: Montserrat, sans-serif;
         width: 80%;
         background-color: rgba(245, 245, 245, 0.5);
-        padding: 0%;
         animation: 0.5s collapse;
+    }
+
+    .content-style {
+        margin: 0;
+        padding: 10px;
     }
 
      @keyframes collapse {
@@ -43,4 +47,12 @@
         }
      }
 
+}
+//css for collapse on page location//
+.collapse-logement {
+    display: flex;
+    .collapse-container {
+        width: 582px;
+        height: 52px;
+    }
 }
