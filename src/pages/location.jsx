@@ -14,13 +14,23 @@ export default function Location() {
   }
 
   let logement = logementfiltered[0];
-
+  let equipementItems = logement.equipments.map((equipment) =>
+    <li key={equipment}>{equipment}</li>
+  )
   return (
     <>
       {logement && <Slidershow listImage={logement.pictures} />}
       <div className='collapse-logement'>
-      <Collapse title='Description'/>
-      <Collapse title='Equipements'/>
+      <Collapse title='Description'>
+      <div className='collapse-description'>
+        {logement.description} 
+      </div>
+      </Collapse>
+      <Collapse title='Equipements'>
+      <div className='collapse-equipements'>
+        <ul className=''>{equipementItems}</ul>
+      </div>
+      </Collapse>
       </div>
     </>
   )

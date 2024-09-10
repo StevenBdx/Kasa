@@ -6,7 +6,7 @@ import { Link } from 'react-router-dom'
 export default function Cards() {
 
   return (
-    <ul>
+    <ul className='card-list'>
       {listlogements.map((logement, id) => (
         <li key={id} className='card-container'>
           <Link to={`/location/${logement.id}`}>

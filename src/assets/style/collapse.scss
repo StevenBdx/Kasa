@@ -1,10 +1,9 @@
-
 //css for collapse on page about//
 .collapse-container {
     position: relative;
     left: 11%;
     margin-bottom: 25px;
-    
+
     .button-collapse {
         display: flex;
         align-items: center;
@@ -12,18 +11,21 @@
         height: 52px;
         background-color: rgba(255, 96, 96, 1);
         border-radius: 10px;
-        
+
         border: 0px;
     }
+
     .arrow {
         margin-left: auto;
     }
-    .title-collapse{
+
+    .title-collapse {
         color: white;
         font-family: Montserrat, sans-serif;
         font-size: 18px;
         font-weight: 700;
     }
+
     .content-collapse {
         font-family: Montserrat, sans-serif;
         width: 80%;
@@ -36,23 +38,42 @@
         padding: 10px;
     }
 
-     @keyframes collapse {
+    @keyframes collapse {
         from {
             max-height: 0px;
             opacity: 0;
         }
+
         to {
             max-height: 500px;
             opacity: 1;
         }
-     }
+    }
 
 }
+
 //css for collapse on page location//
 .collapse-logement {
     display: flex;
+
     .collapse-container {
         width: 582px;
-        height: 52px;
+
+        .collapse-description {
+            animation: 0.5s collapse;
+        }
+
+        .collapse-equipements {
+
+            ul {
+                list-style-type: none;
+                margin: 0;
+                padding: 15px;
+                li {
+                    width: 100%;
+                }
+            }
+        }
     }
+
 }
