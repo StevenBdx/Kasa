@@ -10,15 +10,13 @@ export default function Cards() {
       {listlogements.map((logement, id) => (
         <li key={id} className='card-container'>
           <Link to={`/location/${logement.id}`}>
-          <img src={logement.cover} className='cover' alt="Image représentant le logement" />
-          <span className='overlay-title'>
-            {logement.title}
-          </span>
+            <img src={logement.cover} className='cover' alt="Image représentant le logement" />
+            <span className='overlay-title'>
+              {logement.title}
+            </span>
           </Link>
 
         </li>
-
-
       ))}
     </ul>
   )
